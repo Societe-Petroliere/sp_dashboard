@@ -1,4 +1,82 @@
-.app {
-  width: 100;
+.headerWrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.headerWrapper .toolBar {
+  background: #ffffff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerWrapper .toolBar .navLinksWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.headerWrapper .toolBar .navLinksWrapper .navLinks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  color: #1E92E5;
+}
+
+.headerWrapper .toolBar .navLinksWrapper .signin {
+  background: #1E92E5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  width: 150px;
+  margin: 06px 0;
+}
+
+.footerWrapper {
+  border-top: 2px solid #3AA338;
+}
+
+.footerWrapper .usHolder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.footerWrapper .usHolder .footerTitle {
+  font-size: large;
+  font-weight: bold;
+  color: #3AA338;
+}
+
+.footerWrapper .usHolder p {
+  color: #3AA338;
+}
+
+.footerWrapper .usHolder .follow-us .social-media {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: 50px 0 0 0;
+  color: #3AA338;
+}
+
+.footerWrapper .copy-right {
+  text-align: center;
+  color: #3AA338;
+}
+
+.App {
+  background: #ffffff;
 }
 /*# sourceMappingURL=App.css.map */

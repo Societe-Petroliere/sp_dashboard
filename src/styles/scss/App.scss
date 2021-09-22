@@ -1,3 +1,7 @@
-.app {
-    width: 100;
+@import "variables";
+@import "header";
+@import "footer";
+
+.App {
+    background: $main-white;
 }

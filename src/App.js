@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import logo from './assets/images/sp-logo.png';
+import Routes from './routes';
+
+import "./styles/css/App.css";
 
 export class App extends Component {
   render() {
     return (
       <div className="App">
-        <img
-          src={logo} alt="logo"
-          className="Logo"
-          style={{ width: 120 }}
-        />
+        <Routes style={{ margin: 0, padding: 0, boxSizing: "border-box" }}/>
       </div>
     )
   }

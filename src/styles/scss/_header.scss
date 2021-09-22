@@ -1,0 +1,32 @@
+@import "variables";
+
+.headerWrapper {
+    position: sticky;
+    top: 0;
+    
+    .toolBar {
+        background: $main-white;
+        justify-content: space-between;
+
+        .navLinksWrapper {
+
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            
+            .navLinks {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                color: $primary-color;
+            }
+
+            .signin {
+                background: $primary-color;
+                color: $main-white;
+                font-size: 18px;font-weight: bold;
+                width: 150px;
+                margin: 06px 0;
+            }
+        }
+    }
+}
