@@ -1,0 +1,31 @@
+@import "variables";
+
+.card {
+    width: 50%;
+    margin: 80px auto 60px auto;
+    height: 46vh;
+
+    h1 {
+        text-align: center;
+        color: $primary-color;
+    }
+    .formContainer {
+        width: 80%;
+        margin: 20px auto;
+
+        .form {
+            margin: 20px 0;
+        }
+    }
+
+    .signin {
+        width: 100%;
+        margin: 35px auto;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: $main-white;
+        text-decoration: none;
+        background: $primary-color;
+    }
+}

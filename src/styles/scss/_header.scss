@@ -16,16 +16,24 @@
             
             .navLinks {
                 display: grid;
+                text-decoration: none;
                 grid-template-columns: repeat(4, 1fr);
-                color: $primary-color;
+                
+                .links {
+                    color: $primary-color;
+                    text-decoration: none;
+                }
             }
 
+
             .signin {
-                background: $primary-color;
-                color: $main-white;
-                font-size: 18px;font-weight: bold;
                 width: 150px;
                 margin: 06px 0;
+                font-size: 18px;
+                font-weight: bold;
+                color: $main-white;
+                text-decoration: none;
+                background: $primary-color;
             }
         }
     }

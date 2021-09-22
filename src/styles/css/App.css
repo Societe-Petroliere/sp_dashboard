@@ -26,18 +26,24 @@
 .headerWrapper .toolBar .navLinksWrapper .navLinks {
   display: -ms-grid;
   display: grid;
+  text-decoration: none;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+}
+
+.headerWrapper .toolBar .navLinksWrapper .navLinks .links {
   color: #1E92E5;
+  text-decoration: none;
 }
 
 .headerWrapper .toolBar .navLinksWrapper .signin {
-  background: #1E92E5;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
   width: 150px;
   margin: 06px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background: #1E92E5;
 }
 
 .footerWrapper {
@@ -74,6 +80,37 @@
 .footerWrapper .copy-right {
   text-align: center;
   color: #3AA338;
+}
+
+.card {
+  width: 50%;
+  margin: 80px auto 60px auto;
+  height: 46vh;
+}
+
+.card h1 {
+  text-align: center;
+  color: #1E92E5;
+}
+
+.card .formContainer {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.card .formContainer .form {
+  margin: 20px 0;
+}
+
+.card .signin {
+  width: 100%;
+  margin: 35px auto;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background: #1E92E5;
 }
 
 .App {
