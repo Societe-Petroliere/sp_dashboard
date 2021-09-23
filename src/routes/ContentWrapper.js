@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Sidebar from '../helpers/Sidebar';
 
 export class ContentWrapper extends Component {
     render() {
         return (
             <div>
-                <h1>Content Wrapper</h1>
+                <Sidebar />
             </div>
         )
     }

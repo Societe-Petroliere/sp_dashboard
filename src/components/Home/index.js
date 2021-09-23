@@ -3,10 +3,8 @@ import React from 'react';
 import Footer from '../../common/Footer';
 import Header from '../../common/Header';
 import img1 from "../../assets/images/img1.png";
-import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
-import img5 from "../../assets/images/img5.png";
 import img6 from "../../assets/images/img6.png";
 
 export const index = () => {
@@ -43,7 +41,7 @@ export const index = () => {
                 </h2>
                 <div className="imgWrapper" style={{ display:'flex' }}>
                     <Card style={{ margin: '20px' }}>
-                        <img  style={{ width: "100%", height: "400px", margin: "auto" }} src={img6}/>
+                        <img alt="sample-img" style={{ width: "100%", height: "400px", margin: "auto" }} src={img6}/>
                         <div style={{ width: "95%", margin: "auto" }}>
                             <h2 style={{ color: '#1E92E5' }}>
                                 Inauguration of SP Rusororo Fuel Terminal Depot
@@ -54,7 +52,7 @@ export const index = () => {
                         </div>
                     </Card>
                     <Card style={{ margin: '20px' }}>
-                        <img  style={{ width: "100%", height: "400px", margin: "auto" }} src={img1}/>
+                        <img alt="sample-img" style={{ width: "100%", height: "400px", margin: "auto" }} src={img1}/>
                         <div style={{ width: "95%", margin: "auto" }}>
                             <h2 style={{ color: '#1E92E5' }}>
                                 Inauguration of SP Rusororo Fuel Terminal Depot
@@ -65,7 +63,7 @@ export const index = () => {
                         </div>
                     </Card>
                     <Card style={{ margin: '20px' }}>
-                        <img  style={{ width: "100%", height: "400px", margin: "auto" }} src={img4}/>
+                        <img alt="sample-img" style={{ width: "100%", height: "400px", margin: "auto" }} src={img4}/>
                         <div style={{ width: "95%", margin: "auto" }}>
                             <h2 style={{ color: '#1E92E5' }}>
                                 Inauguration of SP Rusororo Fuel Terminal Depot

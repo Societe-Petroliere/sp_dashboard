@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Card, FormControl, InputLabel, OutlinedInput } from '@material-ui/core';
 import Header from '../../../../common/Header';
 
@@ -34,16 +35,17 @@ export class Signin extends Component {
                                 // onChange={handlePasswordChange}
                             />
                         </FormControl>
-                        <Button
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            color="primary"
-                            className="signin"
-                            
-                        >
-                            Sign In
-                        </Button>
+                        <Link to="/sp-ops/dashboard" style={{ textDecoration: 'none' }}>
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                className="signin"
+                            >
+                                Sign In
+                            </Button>
+                        </Link>
                     </div>
                 </Card>
                 <Footer />
