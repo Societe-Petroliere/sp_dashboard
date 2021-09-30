@@ -14,12 +14,12 @@ export class Signin extends Component {
                     <h1>Signin</h1>
                     <div className="formContainer">
                         <FormControl className="form" fullWidth variant="outlined">
-                            <InputLabel className="email" htmlFor="outlined-email">Enter Email</InputLabel>
+                            <InputLabel className="username" htmlFor="outlined-username">Enter Username</InputLabel>
                             <OutlinedInput
-                                type="email"
+                                type="text"
                                 // error={state.fieldsRequired}
                                 labelWidth={128}
-                                name="email"
+                                name="username"
                                 // value={state.email}
                                 // onChange={handleEmailChange}
                             />

@@ -13,11 +13,12 @@ const Header = () => {
         <div className="headerWrapper">
             <AppBar className="appBar" position="static">
                 <Toolbar  className="toolBar">
-                    <img
-                        src={logo} alt="logo"
-                        className="logo"
-                        style={{ width: 120 }}
-                    />
+                    <Link to='/' >
+                        <img
+                            src={logo} alt="logo"
+                            className="logo"
+                        />
+                    </Link>
                     <div className="navLinksWrapper">
                         <div className="navLinks">
                             <Link to='/' className="links">

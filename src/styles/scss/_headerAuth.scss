@@ -1,0 +1,48 @@
+@import "variables";
+
+.AppBar {
+    .Toolbar {
+        background: white;
+
+        .IconButton1 {
+            color: $primary-color;
+            // background: orange;
+            // font-size: 24px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .logo {
+            width: 125px;
+        }
+
+        .title {
+            color: $primary-color;
+        }
+    }
+}
+
+.list {
+    color: $primary-color;
+    
+    .CommonIcon {
+        font-size: 30px;
+        color: $primary-color;
+    }
+
+    .signoutButton {
+        background: $primary-color;
+        margin: 30px 0;
+
+        .ExitToAppIcon {
+            font-size: 40px;
+            // margin: 0 0 0 -5;
+            color: $main-white;
+        }
+    }
+}
+
+.signout {
+    color: $main-white;
+    font-size: 25px;
+}

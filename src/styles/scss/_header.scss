@@ -8,8 +8,11 @@
         background: $main-white;
         justify-content: space-between;
 
-        .navLinksWrapper {
+    .logo {
+        width: 120px
+    }
 
+        .navLinksWrapper {
             display: flex;
             align-items: right;
             justify-content: right;
