@@ -19,7 +19,7 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 import GroupsIcon from '@mui/icons-material/Groups';
 import GroupIcon from '@mui/icons-material/Group';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import TransactionIcon from '@mui/icons-material/Mail';
 import logo from '../../assets/images/sp-logo11.png';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -30,6 +30,11 @@ import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import FireplaceIcon from '@mui/icons-material/Fireplace';
 import TruckIcon from '@mui/icons-material/LocalShipping';
 import TankIcon from '@mui/icons-material/DoorFront';
+import UserIcon from '../../assets/icons/profile.png';
+import TransactionsTotal from '../../components/Transactions/pages/TransactionsTotal';
+import TransactionsPlot from '../../components/Transactions/pages/TransactionsPlot';
+import UsersTotal from '../../components/Users/pages/UsersTotal';
+import StationsMap from '../../components/Stations/pages/StationsMap';
 
 const drawerWidth = 220;
 
@@ -72,7 +77,7 @@ const AppBar = styled(MuiAppBar, {
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
-    padding: theme.spacing(0, 1),
+    padding: theme.spacing(2, 5),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
@@ -94,17 +99,14 @@ export const Sidebar = () => {
     <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <AppBar position="fixed" open={open} className="AppBar">
-            <Toolbar
-                className="Toolbar"
-            >
+            <Toolbar className="Toolbar" >
                 <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                onClick={handleDrawerOpen}
-                edge="start"
-                sx={{ mr: 2, ...(open && { display: 'none' }) }}
-                className="IconButton1"
-                // style={{ fontSize: '200px', background: 'orange' }}
+                    color="inherit"
+                    aria-label="open drawer"
+                    onClick={handleDrawerOpen}
+                    edge="start"
+                    sx={{ mr: 2, ...(open && { display: 'none' }) }}
+                    className="IconButton1"
                 >
                 <MenuIcon style={{ fontSize: '60px' }} />
                 </IconButton>
@@ -112,10 +114,15 @@ export const Sidebar = () => {
                 <Typography variant="h6" noWrap component="div" className="title">
                     SOCIÉTÉ PETROLIÈRE (SP) LTD
                 </Typography>
-                <div style={{ margin: '0 0 0 45vw' }}>
-                <Typography variant="h6" noWrap component="div" className="title">
-                    Dashboard
-                </Typography>
+                <div style={{ margin: '0 0 0 43vw' }}>
+                    <Typography variant="h6" noWrap component="div" className="title">
+                        Angelus N.
+                    </Typography>
+                </div>
+                <div
+                    className="profileWrapper"
+                >
+                    <img src={UserIcon} alt="UserIcon" className="userIcon" />
                 </div>
             </Toolbar>
         </AppBar>
@@ -145,10 +152,8 @@ export const Sidebar = () => {
                 </IconButton>
             </DrawerHeader>
             <Divider />
-            <List
-                className="list"
-            >
-                <ListItem button >
+            <List className="list" >
+                <ListItem button style={{ background: '#F9FE06' }}>
                     <ListItemIcon>
                         <AnalyticsIcon className="CommonIcon" />
                     </ListItemIcon>
@@ -198,7 +203,7 @@ export const Sidebar = () => {
                 </ListItem>
                 <ListItem button >
                     <ListItemIcon>
-                        <MailIcon className="CommonIcon" />
+                        <TransactionIcon className="CommonIcon" />
                     </ListItemIcon>
                     <ListItemText primary='Transactions' />
                 </ListItem>
@@ -216,9 +221,7 @@ export const Sidebar = () => {
                 </ListItem>
             </List>
             <Divider />
-            <List 
-                className="list"
-            >
+            <List  className="list" >
                 <ListItem button >
                     <ListItemIcon>
                         <AccountCircleIcon className="CommonIcon" />
@@ -240,151 +243,22 @@ export const Sidebar = () => {
                 </ListItem>
             </List>
         </Drawer>
-        <Main open={open}>
-            {/* <DrawerHeader /> */}
-            {/* <Typography paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-                enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-                imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-                Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-                Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-                adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-                nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-                leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-                feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-                consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-                sapien faucibus et molestie ac.
-            </Typography>
-            <Typography paragraph>
-                Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-                eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-                neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-                tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-                sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-                tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
-                gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
-                et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
-                tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-                eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-                posuere sollicitudin aliquam ultrices sagittis orci a.
-            </Typography> */}
+        <Main open={open} >
+            <DrawerHeader />
+            <div className="contentWrapper" style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gridGap: '20px',
+                margin: '40px 0 0 10px'
+            }}>
+                <TransactionsTotal />
+                <TransactionsPlot />
+                <StationsMap />
+                <UsersTotal />
+            </div>
         </Main>
     </Box>
     );
 }
 
 export default Sidebar;
-
-// import * as React from 'react';
-// import Box from '@mui/material/Box';
-// import Drawer from '@mui/material/Drawer';
-// import CssBaseline from '@mui/material/CssBaseline';
-// import AppBar from '@mui/material/AppBar';
-// import Toolbar from '@mui/material/Toolbar';
-// import List from '@mui/material/List';
-// import Typography from '@mui/material/Typography';
-// import Divider from '@mui/material/Divider';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
-
-// const drawerWidth = 220;
-
-// export const Sidebar = () => {
-//     return (
-//         <Box sx={{ display: 'flex' }}>
-//             <CssBaseline />
-//             <AppBar
-//             position="fixed"
-//             sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
-//             >
-//             <Toolbar style={{ background: '#FFFFFF' }}>
-//                 <Typography variant="h5" style={{ color: '#1E92E5' }}>
-//                     SOCIÉTÉ PETROLIÈRE (SP) LTD
-//                 </Typography>
-//                 <Typography variant="h5" style={{ color: '#1E92E5' }}>
-//                     DASHBOARD 
-//                 </Typography>
-//                 <Typography variant="h5" style={{ color: '#1E92E5' }}>
-//                     STATISTICS
-//                 </Typography>
-//             </Toolbar>
-//             </AppBar>
-//             <Drawer
-//             sx={{
-//                 width: drawerWidth,
-//                 flexShrink: 0,
-//                 '& .MuiDrawer-paper': {
-//                     width: drawerWidth,
-//                 boxSizing: 'border-box',
-//                 },
-//             }}
-//             variant="permanent"
-//             anchor="left"
-//             >
-//             <Toolbar />
-//             <Divider />
-//             <List style={{ background: '#1E92E5' }}>
-//                 {['Dashboard', 'Cards', 'Customers', 'Drivers', 'Loading Bays', 'Off-Loading Bays', 'Products', 'Tanks', 'Trailers', 'Transactions', 'Trucks', 'Map'].map((text, index) => (
-//                     <ListItem button key={text}>
-//                     <ListItemIcon>
-//                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-//                     </ListItemIcon>
-//                     <ListItemText primary={text} />
-//                 </ListItem>
-//                 ))}
-//             </List>
-//             <Divider />
-//             <List style={{ background: '#1E92E5' }}>
-//                 {['Profile', 'Settings', 'Help', 'Sign Out'].map((text, index) => (
-//                     <ListItem button key={text}>
-//                     <ListItemIcon>
-//                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-//                     </ListItemIcon>
-//                     <ListItemText primary={text} />
-//                 </ListItem>
-//                 ))}
-//             </List>
-//             </Drawer>
-//             <Box
-//             component="main"
-//             sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
-//             >
-//             <Toolbar />
-//             <Typography paragraph>
-//                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-//                 tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-//                 enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-//                 imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-//                 Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-//                 Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-//                 adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-//                 nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-//                 leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-//                 feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-//                 consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-//                 sapien faucibus et molestie ac.
-//             </Typography>
-//             <Typography paragraph>
-//                 Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-//                 eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-//                 neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-//                 tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-//                 sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-//                 tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
-//                 gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
-//                 et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
-//                 tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-//                 eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-//                 posuere sollicitudin aliquam ultrices sagittis orci a.
-//             </Typography>
-//             </Box>
-//         </Box>
-//     );
-// }
-
-// export default Sidebar;
-
