@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ContentWrapper from './ContentWrapper';
+import Home from '../components/Home';
 import Signin from '../components/Auth/pages/Signin';
 import Signout from '../components/Auth/pages/Signout';
-import Home from '../components/Home';
-import ContentWrapper from './ContentWrapper';
 
 export class Routes extends Component {
     render() {

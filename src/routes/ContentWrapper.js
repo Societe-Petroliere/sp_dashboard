@@ -4,9 +4,11 @@ import Sidebar from '../helpers/Sidebar';
 export class ContentWrapper extends Component {
     render() {
         return (
-            <div>
-                <Sidebar />
-            </div>
+            <>
+                <div>
+                    <Sidebar />
+                </div>
+            </>
         )
     }
 }
