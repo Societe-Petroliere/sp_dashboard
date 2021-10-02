@@ -12,10 +12,8 @@ export const Home = () => {
         <div>
             <Header />
             <br />
-            <br />
-            <br />
         <div style={{
-            width: "70%",
+            width: "65%",
             margin: "auto"
         }}>
             <Card>
@@ -31,17 +29,17 @@ export const Home = () => {
             </Card>
 
         </div>
-            <div className="Content"  style={{ width: '90%', margin: '70px auto 0 auto' }}>
+            <div className="Content"  style={{ width: '90%', margin: '50px auto 0 auto' }}>
                 <h2 style={{
                     width: '600px',
-                    margin: '25px auto',
+                    margin: '20px auto',
                     color: '#1E92E5',
                 }}>
                     Inauguration of SP Rusororo Fuel Terminal Depot
                 </h2>
                 <div className="imgWrapper" style={{ display:'flex' }}>
                     <Card style={{ margin: '20px' }}>
-                        <img alt="sample-img" style={{ width: "100%", height: "400px", margin: "auto" }} src={img6}/>
+                        <img alt="sample-img" style={{ width: "100%", height: "380px", margin: "auto" }} src={img6}/>
                         <div style={{ width: "95%", margin: "auto" }}>
                             <h2 style={{ color: '#1E92E5' }}>
                                 Inauguration of SP Rusororo Fuel Terminal Depot
@@ -52,7 +50,7 @@ export const Home = () => {
                         </div>
                     </Card>
                     <Card style={{ margin: '20px' }}>
-                        <img alt="sample-img" style={{ width: "100%", height: "400px", margin: "auto" }} src={img1}/>
+                        <img alt="sample-img" style={{ width: "100%", height: "380px", margin: "auto" }} src={img1}/>
                         <div style={{ width: "95%", margin: "auto" }}>
                             <h2 style={{ color: '#1E92E5' }}>
                                 Inauguration of SP Rusororo Fuel Terminal Depot
@@ -63,7 +61,7 @@ export const Home = () => {
                         </div>
                     </Card>
                     <Card style={{ margin: '20px' }}>
-                        <img alt="sample-img" style={{ width: "100%", height: "400px", margin: "auto" }} src={img4}/>
+                        <img alt="sample-img" style={{ width: "100%", height: "380px", margin: "auto" }} src={img4}/>
                         <div style={{ width: "95%", margin: "auto" }}>
                             <h2 style={{ color: '#1E92E5' }}>
                                 Inauguration of SP Rusororo Fuel Terminal Depot
