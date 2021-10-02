@@ -14,17 +14,19 @@
             color: $tertiary-color;
         }
 
+        .about-us, .contact-us {
+            font-size: 14px;
+        }
+
         p {
             color: $tertiary-color;
         }
 
         .follow-us {
-
-
             .social-media {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                margin: 50px 0 0 0;
+                margin: 40px 0 0 0;
                 color: $tertiary-color;
             }
         }
