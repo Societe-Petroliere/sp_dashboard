@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, FormControl, InputLabel, OutlinedInput } from '@material-ui/core';
-import Header from '../../../../common/Header';
+import Header from '../../../common/Header';
 
-import Footer from '../../../../common/Footer';
+import Footer from '../../../common/Footer';
 
 export class Signin extends Component {
     render() {
