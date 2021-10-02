@@ -20,7 +20,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import GroupIcon from '@mui/icons-material/Group';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import TransactionIcon from '@mui/icons-material/Mail';
-import logo from '../../assets/images/sp-logo11.png';
+import logo from '../assets/images/sp-logo11.png';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -30,11 +30,11 @@ import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import FireplaceIcon from '@mui/icons-material/Fireplace';
 import TruckIcon from '@mui/icons-material/LocalShipping';
 import TankIcon from '@mui/icons-material/DoorFront';
-import UserIcon from '../../assets/icons/profile.png';
-import TransactionsTotal from '../../components/Transactions/pages/TransactionsTotal';
-import TransactionsPlot from '../../components/Transactions/pages/TransactionsPlot';
-import UsersTotal from '../../components/Users/pages/UsersTotal';
-import StationsMap from '../../components/Stations/pages/StationsMap';
+import UserIcon from '../assets/icons/profile.png';
+import TransactionsTotal from '../components/Transactions/pages/TransactionsTotal';
+import TransactionsPlot from '../components/Transactions/pages/TransactionsPlot';
+import UsersTotal from '../components/Users/pages/UsersTotal';
+import StationsMap from '../components/Stations/pages/StationsMap';
 
 const drawerWidth = 220;
 

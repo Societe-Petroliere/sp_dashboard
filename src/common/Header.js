@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { Button } from '@material-ui/core';
 import Toolbar from '@material-ui/core/Toolbar';
 
-import logo from "../../assets/images/sp-logo.png";
+import logo from "../assets/images/sp-logo.png";
 
 const Header = () => {
 

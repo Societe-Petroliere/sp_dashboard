@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card } from '@material-ui/core';
-import SPStations from '../../../../assets/images/SP-stations.png';
+import SPStations from '../../../assets/images/SP-stations.png';
 
 export class StationsMap extends Component {
     render() {
