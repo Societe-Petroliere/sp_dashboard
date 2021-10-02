@@ -1,11 +1,11 @@
 import { Card } from '@material-ui/core';
 import React from 'react';
-import Footer from '../common/Footer';
-import Header from '../common/Header';
-import img1 from "../../assets/images/img1.png";
-import img3 from "../../assets/images/img3.png";
-import img4 from "../../assets/images/img4.png";
-import img6 from "../../assets/images/img6.png";
+import Footer from '../../../common/Footer';
+import Header from '../../../common/Header';
+import img1 from "../../../assets/images/img1.png";
+import img3 from "../../../assets/images/img3.png";
+import img4 from "../../../assets/images/img4.png";
+import img6 from "../../../assets/images/img6.png";
 
 export const Home = () => {
     return (
