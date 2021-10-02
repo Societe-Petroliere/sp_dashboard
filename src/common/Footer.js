@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="usHolder">
                 <div class="about-us">
                         <p class="footerTitle">About Us</p>
-                        <p>SP Head Quater</p>
-                        <p>SP Rusororo Fuel Depot</p>
-                        <p>SP Stations</p>
-                        <p>SP Gas</p>
+                        <p class="about-us">SP Head Quater</p>
+                        <p class="about-us">SP Rusororo Fuel Depot</p>
+                        <p class="about-us">SP Stations</p>
+                        <p class="about-us">SP Gas</p>
                 </div>
                 <div class="follow-us">
                     <p class="footerTitle">Follow Us</p>
